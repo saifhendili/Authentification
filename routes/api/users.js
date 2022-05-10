@@ -20,9 +20,7 @@ router.post(
     check('lastname', 'lastname is required')
       .not()
       .isEmpty(),
-    check('typeuser', 'type of user is required')
-      .not()
-      .isEmpty(),
+ 
     check('birthday', 'date of birthday is required')
       .not()
       .isEmpty(),
@@ -40,7 +38,6 @@ router.post(
     const {
       firstname,
       lastname,
-      typeuser,
       email,
       birthday,
       password
@@ -62,7 +59,6 @@ router.post(
         lastname,
         email,
         avatar,
-        typeuser,
         birthday,
         password
       });

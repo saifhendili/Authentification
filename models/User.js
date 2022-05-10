@@ -20,7 +20,11 @@ const UserSchema = new mongoose.Schema({
   },
   typeuser: {
     type: String,
-    required: true,
+default:"User"
+  },
+  Abonnemtnt: {
+    type: String,
+default:"normal"
   },
   avatar: {
     type: String,
